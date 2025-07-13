@@ -8,7 +8,7 @@ import asyncio
 # --- 設定項目 ---
 # !!! 重要: Botトークンは公開しないでください。環境変数などに設定することを強く推奨します。!!!
 # TOKEN = os.getenv("DISCORD_BOT_TOKEN") # 環境変数からトークンを読み込むことを強く推奨
-TOKEN = "MTM5MTU3Njc1ODAwNzg5MDA4MQ.GelWGO.giO6uwHUwr3rw1EaiJxdXOd_uS7o7h82mqGSFA" # ← 現在のコードのトークンを一時的に使用。本番では環境変数に！
+TOKEN = os.getenv("DISCORD_BOT_TOKEN") # 環境変数からトークンを読み込む
 if TOKEN is None or TOKEN == "YOUR_BOT_TOKEN_HERE": # 環境変数が設定されていない、またはデフォルト値のままの場合
     print("エラー: ボットトークンが設定されていません。環境変数 'DISCORD_BOT_TOKEN' を設定してください。")
     print("または、コード内の 'TOKEN = \"...\"' の部分に実際のトークンを入力してください（非推奨）。")
